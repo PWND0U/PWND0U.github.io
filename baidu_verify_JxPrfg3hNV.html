@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>【博客搭建第一季】使用hexo快速创建个人博客 | codefat·代码小胖的博客</title>
-  <meta name="keywords" content=" 博客搭建 , 新手指引 ">
-  <meta name="description" content="【博客搭建第一季】使用hexo快速创建个人博客 | codefat·代码小胖的博客">
+  <title>codefat·代码小胖的博客</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="codefat·代码小胖的博客">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="安装 windows  https:&#x2F;&#x2F;git-scm.com&#x2F;download&#x2F;win macos  https:&#x2F;&#x2F;git-scm.com&#x2F;download&#x2F;mac linux  https:&#x2F;&#x2F;git-scm.com&#x2F;download&#x2F;linux创建新的仓库1. 创建新的文件夹 2. git init克隆远程仓库 github上的仓库  git clone &#x2F;path&#x2F;to&#x2F;reposito">
 <meta name="keywords" content="git安装与使用">
@@ -224,33 +224,17 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="w-【博客搭建第一季】使用hexo快速创建个人博客" class="article article-type-w" itemscope itemprop="blogPost">
-    
-        <h1 class="article-title">【博客搭建第一季】使用hexo快速创建个人博客</h1>
+        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
     
     <div class="article-meta">
         
         
         
-        <span class="book">
-            
-                <a  data-rel="成长记">成长记</a>
-            
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a class="color5">博客搭建</a>
-            
-            <a class="color5">新手指引</a>
-            
-        </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-11-22 16:21:58'>2019-11-22 15:59</time>
+        创建时间:<time class="date" title='更新时间: 2019-11-22 23:58:31'>2019-11-22 23:58</time>
         
     </div>
     <div class="article-meta">
@@ -272,7 +256,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#下载nodejs"><span class="toc-text">下载nodejs</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#开始安装hexo"><span class="toc-text">开始安装hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#开始初始的blog之路"><span class="toc-text">开始初始的blog之路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#部署到GitHub上"><span class="toc-text">部署到GitHub上</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#创建自己的仓库"><span class="toc-text">创建自己的仓库</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hexo快速使用命令"><span class="toc-text">hexo快速使用命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol>
+        
     
 <style>
     .left-col .switch-btn,
@@ -288,51 +272,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="下载nodejs"><a href="#下载nodejs" class="headerlink" title="下载nodejs"></a>下载nodejs</h3><pre><code>https://nodejs.org/en/</code></pre><ul>
-<li><p>下载安装后检查自己的版本号</p>
-<p><code>node -v</code></p>
-</li>
-<li><p>查看npm版本号</p>
-<p><code>npm -v</code></p>
-</li>
-<li><p>以上两步全部完成后切换至阿里源</p>
-<pre><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></pre></li>
-</ul>
-<h3 id="开始安装hexo"><a href="#开始安装hexo" class="headerlink" title="开始安装hexo"></a>开始安装hexo</h3><pre><code>cnpm install -g hexo-cli</code></pre><h3 id="开始初始的blog之路"><a href="#开始初始的blog之路" class="headerlink" title="开始初始的blog之路"></a>开始初始的blog之路</h3><ol>
-<li>新建自己的blog文件夹、</li>
-</ol>
-<ul>
-<li>我的在/usr/local/blog</li>
-</ul>
-<ol>
-<li><p>进入自己的blog文件夹</p>
-<pre><code>//下载初始的blog模板
-sudo hexo init</code></pre></li>
-<li><p>下载完成,启动hexo并验证</p>
-<pre><code>hexo s</code></pre></li>
-<li><p>新建一个文档</p>
-<pre><code>hexo new &quot;My New Post&quot;</code></pre></li>
-<li><p>清理目前的文件</p>
-<pre><code>hexo clean</code></pre></li>
-<li><p>重新生成静态资源</p>
-<pre><code>hexo generate</code></pre></li>
-<li><p>重启服务查看各个写的文档</p>
-<pre><code>hexo s</code></pre></li>
-</ol>
-<h3 id="部署到GitHub上"><a href="#部署到GitHub上" class="headerlink" title="部署到GitHub上"></a>部署到GitHub上</h3><h4 id="创建自己的仓库"><a href="#创建自己的仓库" class="headerlink" title="创建自己的仓库"></a>创建自己的仓库</h4><ol>
-<li>安装hexo-deployer-git插件</li>
-</ol>
-<pre><code>cnpm install --save hexo-deployer-git</code></pre><ol>
-<li><p>修改blog文件夹下的_config.yml文件的最后几行</p>
-<pre><code>deploy:
- type: git
- repo: https://github.com/&lt;username&gt;/&lt;project&gt;
- # example, https://github.com/hexojs/hexojs.github.io
- branch: gh-pages</code></pre></li>
-<li><p>推送到自己的仓库</p>
-<pre><code>hexo d</code></pre></li>
-</ol>
-<h3 id="hexo快速使用命令"><a href="#hexo快速使用命令" class="headerlink" title="hexo快速使用命令"></a>hexo快速使用命令</h3><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code>$ hexo new &quot;My New Post&quot;</code></pre><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code>$ hexo server</code></pre><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code>$ hexo generate</code></pre><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code>$ hexo deploy</code></pre>
+        JxPrfg3hNV
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 787772394@qq.com </span>
     </div>
@@ -343,18 +283,6 @@ sudo hexo init</code></pre></li>
     <a  class="dashang" onclick="dashangToggle()">赏</a>
 </p>
 
-
-<div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>【博客搭建第一季】使用hexo快速创建个人博客</p>
-    
-    <p><span class="copy-title">本文作者:</span><a  title="二豆子·pwnd0u">二豆子·pwnd0u</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-11-22, 15:59:44</p>
-    <p><span class="copy-title">最后更新:</span>2019-11-22, 16:21:58</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/22/%E3%80%90%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%AC%E4%B8%80%E5%AD%A3%E3%80%91%E4%BD%BF%E7%94%A8hexo%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="【博客搭建第一季】使用hexo快速创建个人博客">http://yoursite.com/2019/11/22/%E3%80%90%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%AC%E4%B8%80%E5%AD%A3%E3%80%91%E4%BD%BF%E7%94%A8hexo%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</a>
-    <p>
-        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
-    </p>
-</div>
 
 
 
