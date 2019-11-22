@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>codefat·代码小胖的博客</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="codefat·代码小胖的博客">
+  <title>git的简易使用说明 | codefat·代码小胖的博客</title>
+  <meta name="keywords" content=" git安装与使用 ">
+  <meta name="description" content="git的简易使用说明 | codefat·代码小胖的博客">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="下载nodejshttps:&#x2F;&#x2F;nodejs.org&#x2F;en&#x2F; 下载安装后检查自己的版本号 node -v  查看npm版本号 npm -v  以上两步全部完成后切换至阿里源 npm install -g cnpm --registry=https:&#x2F;&#x2F;registry.npm.taobao.org  开始安装hexocnpm install -g hexo-cli开始初始的blog之路 新建自己的">
 <meta name="keywords" content="博客搭建,新手指引">
@@ -51,7 +51,7 @@
 </div>
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/" class="avatar_target">
     <img class="avatar" src="/img/avatar.png" />
@@ -222,12 +222,55 @@
         </div>
     </div>
 </aside>
-<div class="post index">
+<div class="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-git的简易使用说明" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Why-Blog"><span class="toc-text">Why Blog</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#对博客的理解"><span class="toc-text">对博客的理解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一句话"><span class="toc-text">一句话</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关于我"><span class="toc-text">关于我</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#兴趣方向"><span class="toc-text">兴趣方向</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参与社区"><span class="toc-text">参与社区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#联系我"><span class="toc-text">联系我</span></a></li></ol></li></ol></li></ol>
+        <h1 class="article-title">git的简易使用说明</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="成长记">成长记</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color4">git安装与使用</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2019-11-22 17:01:19'>2019-11-22 17:00</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建新的仓库"><span class="toc-text">创建新的仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#克隆远程仓库"><span class="toc-text">克隆远程仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#提交本地代码改动"><span class="toc-text">提交本地代码改动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#同步资源文件"><span class="toc-text">同步资源文件</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -240,44 +283,61 @@
     }
 </style>
 </div>
-            <h1 id="Why-Blog"><a href="#Why-Blog" class="headerlink" title="Why Blog"></a>Why Blog</h1><h2 id="对博客的理解"><a href="#对博客的理解" class="headerlink" title="对博客的理解"></a>对博客的理解</h2><p>喜欢写Blog的人，会经历三个阶段。</p>
-<blockquote>
-<p>第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。</p>
-</blockquote>
-<blockquote>
-<p>第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。</p>
-</blockquote>
-<blockquote>
-<p>第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。</p>
-</blockquote>
-<p>我们每个人的在网络上产生的数据越来越多，这些信息是我们在互联网上存在过的痕迹，值得我们认真对待。但是它们被分散分布在各个网站上。很多时候我们很难将它们聚合在一起，而且各个网站的信息排布方式也没有办法自由控制，所以我们需要一个可以由自己主宰的空间——博客。</p>
-<p>通过博客，我们可以记录自己的生活和成长的轨迹。它不像 Twitter 那样碎片化，也不像 Facebook 那样关系化，它是私人的空间。</p>
-<h3 id="一句话"><a href="#一句话" class="headerlink" title="一句话"></a>一句话</h3><blockquote>
-<p>Just do it !</p>
-</blockquote>
-<h3 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h3><blockquote>
-<p>一个莫名其妙的，喜欢敲代码，喜欢研究技术的，表面上高冷、不苟言笑的，</p>
-<p>偶尔又嬉皮笑脸，偶尔又特立独行的，双重性格的技术爱好者！</p>
-</blockquote>
-<h3 id="兴趣方向"><a href="#兴趣方向" class="headerlink" title="兴趣方向"></a>兴趣方向</h3><blockquote>
-<p>喜欢和喜欢的人一起做事和生活</p>
-</blockquote>
-<h3 id="参与社区"><a href="#参与社区" class="headerlink" title="参与社区"></a>参与社区</h3><blockquote>
-<p>个人博客: <a href="http://www.codefat.cn/" target="_blank" rel="noopener">http://www.codefat.cn</a></p>
-<p>哔哩哔哩: 待添加</p>
-<p>csdn博客: 待添加</p>
-</blockquote>
-<h3 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h3><blockquote>
-<p>Email: <a href="mailto:787772394@qq.com" target="_blank" rel="noopener">787772394@qq.com</a></p>
-</blockquote>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ol>
+<li>windows</li>
+</ol>
+<pre><code>https://git-scm.com/download/win</code></pre><ol>
+<li>macos</li>
+</ol>
+<pre><code>https://git-scm.com/download/mac</code></pre><ol>
+<li>linux</li>
+</ol>
+<pre><code>https://git-scm.com/download/linux</code></pre><h3 id="创建新的仓库"><a href="#创建新的仓库" class="headerlink" title="创建新的仓库"></a>创建新的仓库</h3><pre><code>1. 创建新的文件夹
+2. git init</code></pre><h3 id="克隆远程仓库"><a href="#克隆远程仓库" class="headerlink" title="克隆远程仓库"></a>克隆远程仓库</h3><ol>
+<li>github上的仓库</li>
+</ol>
+<pre><code>git clone /path/to/repository</code></pre><ol>
+<li>自己远程服务器上的仓库</li>
+</ol>
+<pre><code>git clone username@host:/path/to/repository</code></pre><h3 id="提交本地代码改动"><a href="#提交本地代码改动" class="headerlink" title="提交本地代码改动"></a>提交本地代码改动</h3><pre><code>git add *
+git commit -m &quot;代码提交信息&quot;
+git push origin master</code></pre><h3 id="同步资源文件"><a href="#同步资源文件" class="headerlink" title="同步资源文件"></a>同步资源文件</h3><pre><code>git pull /path/to/repository</code></pre><p><strong>其他的骚操作请学会百度，嘿嘿</strong></p>
 
-        </article>
-        
-        <p>
-            <a  class="dashang" onclick="dashangToggle()">赏</a>
-        </p>
-        
-        
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 787772394@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>git的简易使用说明</p>
+    
+    <p><span class="copy-title">本文作者:</span><a  title="二豆子·pwnd0u">二豆子·pwnd0u</a></p>
+    <p><span class="copy-title">发布时间:</span>2019-11-22, 17:00:43</p>
+    <p><span class="copy-title">最后更新:</span>2019-11-22, 17:01:19</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/22/git%E7%9A%84%E7%AE%80%E6%98%93%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" title="git的简易使用说明">http://yoursite.com/2019/11/22/git%E7%9A%84%E7%AE%80%E6%98%93%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">©2018-2019 CodeFat·代码小胖的博客</p>

@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>codefat·代码小胖的博客</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="codefat·代码小胖的博客">
+  <title>【博客搭建第二季】使用hugo快速创建个人博客 | codefat·代码小胖的博客</title>
+  <meta name="keywords" content=" 博客搭建 , 新手指导 ">
+  <meta name="description" content="【博客搭建第二季】使用hugo快速创建个人博客 | codefat·代码小胖的博客">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="下载nodejshttps:&#x2F;&#x2F;nodejs.org&#x2F;en&#x2F; 下载安装后检查自己的版本号 node -v  查看npm版本号 npm -v  以上两步全部完成后切换至阿里源 npm install -g cnpm --registry=https:&#x2F;&#x2F;registry.npm.taobao.org  开始安装hexocnpm install -g hexo-cli开始初始的blog之路 新建自己的">
 <meta name="keywords" content="博客搭建,新手指引">
@@ -51,7 +51,7 @@
 </div>
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/" class="avatar_target">
     <img class="avatar" src="/img/avatar.png" />
@@ -222,12 +222,57 @@
         </div>
     </div>
 </aside>
-<div class="post index">
+<div class="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-【博客搭建第二季】使用hugo快速创建个人博客" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Why-Blog"><span class="toc-text">Why Blog</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#对博客的理解"><span class="toc-text">对博客的理解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一句话"><span class="toc-text">一句话</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关于我"><span class="toc-text">关于我</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#兴趣方向"><span class="toc-text">兴趣方向</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参与社区"><span class="toc-text">参与社区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#联系我"><span class="toc-text">联系我</span></a></li></ol></li></ol></li></ol>
+        <h1 class="article-title">【博客搭建第二季】使用hugo快速创建个人博客</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="成长记">成长记</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color5">博客搭建</a>
+            
+            <a class="color5">新手指导</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2019-11-22 16:58:41'>2019-11-22 16:57</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Hugo"><span class="toc-text">安装Hugo</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-二进制安装（推荐：简单、快速）"><span class="toc-text">1. 二进制安装（推荐：简单、快速）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-源码安装"><span class="toc-text">2. 源码安装</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#生成站点"><span class="toc-text">生成站点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建文章"><span class="toc-text">创建文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装皮肤"><span class="toc-text">安装皮肤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#运行Hugo"><span class="toc-text">运行Hugo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署"><span class="toc-text">部署</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -240,44 +285,132 @@
     }
 </style>
 </div>
-            <h1 id="Why-Blog"><a href="#Why-Blog" class="headerlink" title="Why Blog"></a>Why Blog</h1><h2 id="对博客的理解"><a href="#对博客的理解" class="headerlink" title="对博客的理解"></a>对博客的理解</h2><p>喜欢写Blog的人，会经历三个阶段。</p>
-<blockquote>
-<p>第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。</p>
-</blockquote>
-<blockquote>
-<p>第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。</p>
-</blockquote>
-<blockquote>
-<p>第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。</p>
-</blockquote>
-<p>我们每个人的在网络上产生的数据越来越多，这些信息是我们在互联网上存在过的痕迹，值得我们认真对待。但是它们被分散分布在各个网站上。很多时候我们很难将它们聚合在一起，而且各个网站的信息排布方式也没有办法自由控制，所以我们需要一个可以由自己主宰的空间——博客。</p>
-<p>通过博客，我们可以记录自己的生活和成长的轨迹。它不像 Twitter 那样碎片化，也不像 Facebook 那样关系化，它是私人的空间。</p>
-<h3 id="一句话"><a href="#一句话" class="headerlink" title="一句话"></a>一句话</h3><blockquote>
-<p>Just do it !</p>
-</blockquote>
-<h3 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h3><blockquote>
-<p>一个莫名其妙的，喜欢敲代码，喜欢研究技术的，表面上高冷、不苟言笑的，</p>
-<p>偶尔又嬉皮笑脸，偶尔又特立独行的，双重性格的技术爱好者！</p>
-</blockquote>
-<h3 id="兴趣方向"><a href="#兴趣方向" class="headerlink" title="兴趣方向"></a>兴趣方向</h3><blockquote>
-<p>喜欢和喜欢的人一起做事和生活</p>
-</blockquote>
-<h3 id="参与社区"><a href="#参与社区" class="headerlink" title="参与社区"></a>参与社区</h3><blockquote>
-<p>个人博客: <a href="http://www.codefat.cn/" target="_blank" rel="noopener">http://www.codefat.cn</a></p>
-<p>哔哩哔哩: 待添加</p>
-<p>csdn博客: 待添加</p>
-</blockquote>
-<h3 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h3><blockquote>
-<p>Email: <a href="mailto:787772394@qq.com" target="_blank" rel="noopener">787772394@qq.com</a></p>
-</blockquote>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="安装Hugo"><a href="#安装Hugo" class="headerlink" title="安装Hugo"></a>安装Hugo</h2><h4 id="1-二进制安装（推荐：简单、快速）"><a href="#1-二进制安装（推荐：简单、快速）" class="headerlink" title="1. 二进制安装（推荐：简单、快速）"></a>1. 二进制安装（推荐：简单、快速）</h4><p>到 <a href="https://github.com/spf13/hugo/releases" target="_blank" rel="noopener">Hugo Releases</a> 下载对应的操作系统版本的Hugo二进制文件（hugo或者hugo.exe）</p>
+<p>Mac下直接使用 <code>Homebrew</code> 安装：</p>
+<pre><code class="bash">brew install hugo</code></pre>
+<p>Bash</p>
+<p>Copy</p>
+<h4 id="2-源码安装"><a href="#2-源码安装" class="headerlink" title="2. 源码安装"></a>2. 源码安装</h4><p>源码编译安装，首先安装好依赖的工具：</p>
+<ul>
+<li><a href="http://git-scm.com/" target="_blank" rel="noopener">Git</a></li>
+<li><a href="http://mercurial.selenic.com/" target="_blank" rel="noopener">Mercurial</a></li>
+<li><a href="http://golang.org/" target="_blank" rel="noopener">Go</a> 1.3+ (Go 1.4+ on Windows)</li>
+</ul>
+<p>设置好 <code>GOPATH</code> 环境变量，获取源码并编译：</p>
+<pre><code class="bash">$ export GOPATH=$HOME/go
+$ go get -v github.com/spf13/hugo</code></pre>
+<p>Bash</p>
+<p>Copy</p>
+<p>源码会下载到 <code>$GOPATH/src</code> 目录，二进制在 <code>$GOPATH/bin/</code></p>
+<p>如果需要更新所有Hugo的依赖库，增加 <code>-u</code> 参数：</p>
+<pre><code class="bash">$ go get -u -v github.com/spf13/hugo</code></pre>
+<p>Bash</p>
+<p>Copy</p>
+<h2 id="生成站点"><a href="#生成站点" class="headerlink" title="生成站点"></a>生成站点</h2><p>使用Hugo快速生成站点，比如希望生成到 <code>/path/to/site</code> 路径：</p>
+<pre><code class="bash">$ hugo new site /path/to/site</code></pre>
+<p>Bash</p>
+<p>Copy</p>
+<p>这样就在 <code>/path/to/site</code> 目录里生成了初始站点，进去目录：</p>
+<pre><code class="bash">$ cd /path/to/site</code></pre>
+<p>Bash</p>
+<p>Copy</p>
+<p>站点目录结构：</p>
+<pre><code>  ▸ archetypes/
+  ▸ content/
+  ▸ layouts/
+  ▸ static/
+    config.toml</code></pre><h2 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h2><p>创建一个 <code>about</code> 页面：</p>
+<pre><code class="bash">$ hugo new about.md</code></pre>
+<p>Bash</p>
+<p>Copy</p>
+<p><code>about.md</code> 自动生成到了 <code>content/about.md</code> ，打开 <code>about.md</code> 看下：</p>
+<pre><code>+++
+date = &quot;2015-10-25T08:36:54-07:00&quot;
+draft = true
+title = &quot;about&quot;
 
-        </article>
-        
-        <p>
-            <a  class="dashang" onclick="dashangToggle()">赏</a>
-        </p>
-        
-        
++++
+
+正文内容</code></pre><p>内容是 <code>Markdown</code> 格式的，<code>+++</code> 之间的内容是 <a href="https://github.com/toml-lang/toml" target="_blank" rel="noopener">TOML</a> 格式的，根据你的喜好，你可以换成 <a href="http://www.yaml.org/" target="_blank" rel="noopener">YAML</a> 格式（使用 <code>---</code> 标记）或者 <a href="http://www.json.org/" target="_blank" rel="noopener">JSON</a> 格式。</p>
+<p>创建第一篇文章，放到 <code>post</code> 目录，方便之后生成聚合页面。</p>
+<pre><code class="bash">$ hugo new post/first.md</code></pre>
+<p>Bash</p>
+<p>Copy</p>
+<p>打开编辑 <code>post/first.md</code> ：</p>
+<pre><code>---
+date: &quot;2015-10-25T08:36:54-07:00&quot;
+title: &quot;first&quot;
+
+---
+
+### Hello Hugo
+
+ 1. aaa
+ 1. bbb
+ 1. ccc</code></pre><h2 id="安装皮肤"><a href="#安装皮肤" class="headerlink" title="安装皮肤"></a>安装皮肤</h2><p>到 <a href="https://www.gohugo.org/theme/" target="_blank" rel="noopener">皮肤列表</a> 挑选一个心仪的皮肤，比如你觉得 <code>Hyde</code> 皮肤不错，找到相关的 <code>GitHub</code> 地址，创建目录 <code>themes</code>，在 <code>themes</code> 目录里把皮肤 <code>git clone</code> 下来：</p>
+<pre><code class="bash"># 创建 themes 目录
+$ cd themes
+$ git clone https://github.com/spf13/hyde.git</code></pre>
+<p>Bash</p>
+<p>Copy</p>
+<h2 id="运行Hugo"><a href="#运行Hugo" class="headerlink" title="运行Hugo"></a>运行Hugo</h2><p>在你的站点根目录执行 <code>Hugo</code> 命令进行调试：</p>
+<pre><code class="bash">$ hugo server --theme=hyde --buildDrafts</code></pre>
+<p>Bash</p>
+<p>Copy</p>
+<p>（注明：v0.15 版本之后，不再需要使用 <code>--watch</code> 参数了）</p>
+<p>浏览器里打开： <code>http://localhost:1313</code></p>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>假设你需要部署在 <code>GitHub Pages</code> 上，首先在GitHub上创建一个Repository，命名为：<code>coderzh.github.io</code> （coderzh替换为你的github用户名）。</p>
+<p>在站点根目录执行 <code>Hugo</code> 命令生成最终页面：</p>
+<pre><code class="bash">$ hugo --theme=hyde --baseUrl=&quot;http://coderzh.github.io/&quot;</code></pre>
+<p>Bash</p>
+<p>Copy</p>
+<p>（注意，以上命令并不会生成草稿页面，如果未生成任何文章，请去掉文章头部的 <code>draft=true</code> 再重新生成。）</p>
+<p>如果一切顺利，所有静态页面都会生成到 <code>public</code> 目录，将pubilc目录里所有文件 <code>push</code> 到刚创建的Repository的 <code>master</code> 分支。</p>
+<pre><code class="bash">$ cd public
+$ git init
+$ git remote add origin https://github.com/coderzh/coderzh.github.io.git
+$ git add -A
+$ git commit -m &quot;first commit&quot;
+$ git push -u origin master</code></pre>
+<p>Bash</p>
+<p>Copy</p>
+<p>浏览器里访问：<code>http://coderzh.github.io/</code></p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 787772394@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>【博客搭建第二季】使用hugo快速创建个人博客</p>
+    
+    <p><span class="copy-title">本文作者:</span><a  title="二豆子·pwnd0u">二豆子·pwnd0u</a></p>
+    <p><span class="copy-title">发布时间:</span>2019-11-22, 16:57:39</p>
+    <p><span class="copy-title">最后更新:</span>2019-11-22, 16:58:41</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/22/%E3%80%90%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%AC%E4%BA%8C%E5%AD%A3%E3%80%91%E4%BD%BF%E7%94%A8hugo%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="【博客搭建第二季】使用hugo快速创建个人博客">http://yoursite.com/2019/11/22/%E3%80%90%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%AC%E4%BA%8C%E5%AD%A3%E3%80%91%E4%BD%BF%E7%94%A8hugo%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">©2018-2019 CodeFat·代码小胖的博客</p>
