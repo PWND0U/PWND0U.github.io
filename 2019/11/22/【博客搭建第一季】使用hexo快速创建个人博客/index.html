@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="baidu-site-verification" content="JxPrfg3hNV" />
   <title>【博客搭建第一季】使用hexo快速创建个人博客 | codefat·代码小胖的博客</title>
   <meta name="keywords" content=" 博客搭建 , 新手指引 ">
   <meta name="description" content="【博客搭建第一季】使用hexo快速创建个人博客 | codefat·代码小胖的博客">
@@ -92,7 +93,7 @@
     
         
             
-            <li><div data-rel="成长记">成长记<small>(3)</small></div>
+            <li><div data-rel="docker">docker<small>(1)</small></div>
                 
             </li>
             
@@ -100,7 +101,7 @@
     
         
             
-            <li><div data-rel="docker">docker<small>(1)</small></div>
+            <li><div data-rel="成长记">成长记<small>(3)</small></div>
                 
             </li>
             
@@ -151,6 +152,14 @@
     <div class="tags-list">
     
     <li class="article-tag-list-item">
+        <a class="color2">docker</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">ubuntu</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color5">博客搭建</a>
     </li>
     
@@ -166,19 +175,19 @@
         <a class="color5">新手指导</a>
     </li>
     
-    <li class="article-tag-list-item">
-        <a class="color2">docker</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color2">ubuntu</a>
-    </li>
-    
     <div class="clearfix"></div>
 </div>
 
     
     <nav id="title-list-nav">
+        
+        <a  class="docker "
+           href="/2019/11/22/Ubuntu%E4%B8%8B%E5%AE%8C%E7%BE%8E%E5%B9%B2%E5%87%80%E5%8D%B8%E8%BD%BDdocker/"
+           data-tag="docker,ubuntu"
+           data-author="" >
+            <span class="post-title" title="Ubuntu下完美干净卸载docker">Ubuntu下完美干净卸载docker</span>
+            <span class="post-date" title="2019-11-22 16:59:30">2019/11/22</span>
+        </a>
         
         <a  class="成长记 "
            href="/2019/11/22/%E3%80%90%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%AC%E4%B8%80%E5%AD%A3%E3%80%91%E4%BD%BF%E7%94%A8hexo%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"
@@ -202,14 +211,6 @@
            data-author="" >
             <span class="post-title" title="【博客搭建第二季】使用hugo快速创建个人博客">【博客搭建第二季】使用hugo快速创建个人博客</span>
             <span class="post-date" title="2019-11-22 16:57:39">2019/11/22</span>
-        </a>
-        
-        <a  class="docker "
-           href="/2019/11/22/Ubuntu%E4%B8%8B%E5%AE%8C%E7%BE%8E%E5%B9%B2%E5%87%80%E5%8D%B8%E8%BD%BDdocker/"
-           data-tag="docker,ubuntu"
-           data-author="" >
-            <span class="post-title" title="Ubuntu下完美干净卸载docker">Ubuntu下完美干净卸载docker</span>
-            <span class="post-date" title="2019-11-22 16:59:30">2019/11/22</span>
         </a>
         
     </nav>
@@ -412,7 +413,7 @@ sudo hexo init</code></pre></li>
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#博客搭建','#新手指引','#git安装与使用','#新手指导','#docker','#ubuntu',],
+            'data': ['#docker','#ubuntu','#博客搭建','#新手指引','#git安装与使用','#新手指导',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
