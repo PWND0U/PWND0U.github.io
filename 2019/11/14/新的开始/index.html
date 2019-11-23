@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="baidu-site-verification" content="JxPrfg3hNV" />
-  <title>docker使用过程中遇到的Cannot connect to the Docker daemon问题 | codefat·代码小胖的博客</title>
-  <meta name="keywords" content=" docker , 采坑记 ">
-  <meta name="description" content="docker使用过程中遇到的Cannot connect to the Docker daemon问题 | codefat·代码小胖的博客">
+  <title>新的开始 | codefat·代码小胖的博客</title>
+  <meta name="keywords" content=" 随笔 ">
+  <meta name="description" content="新的开始 | codefat·代码小胖的博客">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="主机环境：ubuntu18.04 安装docker 参考官方文档 查阅本人博客相关帖子  导入镜像 下载相关镜像：  链接：https:&#x2F;&#x2F;pan.baidu.com&#x2F;s&#x2F;10sx1YFjiAcTWsnrH7fdVqA  提取码：p7yw    下载完成后导入自己的Ubuntu环境  导入镜像 cat ubuntu32.tar |docker import - pwnubuntu32  cat u">
 <meta name="keywords" content="PWN,逆向">
@@ -346,33 +346,33 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-docker使用过程中遇到的Cannot-connect-to-the-Docker-daemon问题" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-新的开始" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">docker使用过程中遇到的Cannot connect to the Docker daemon问题</h1>
+        <h1 class="article-title">新的开始</h1>
     
     <div class="article-meta">
+        
+        <span class="top"><a>置顶</a></span>
         
         
         
         <span class="book">
             
-                <a  data-rel="成长记">成长记</a>
+                <a  data-rel="随笔">随笔</a>
             
         </span>
         
         
         <span class="tag">
             
-            <a class="color2">docker</a>
-            
-            <a class="color4">采坑记</a>
+            <a class="color3">随笔</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-11-24 00:37:58'>2019-11-24 00:36</time>
+        创建时间:<time class="date" title='更新时间: 2019-11-24 01:00:27'>2019-11-14 00:57</time>
         
     </div>
     <div class="article-meta">
@@ -394,7 +394,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#解决方法"><span class="toc-text">解决方法</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#搭建博客的目的"><span class="toc-text">搭建博客的目的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#未来的计划"><span class="toc-text">未来的计划</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -410,17 +410,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>问题描述</strong></p>
-<ul>
-<li><p>今天要导入镜像到docker中产生了如下错误：</p>
-<pre><code>Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?</code></pre></li>
-<li><p>判断是服务出现了问题</p>
+        <p>今天，我正式开通了个人博客，重点分享自己在学习和生活中的一些解决问题的方法和感想。</p>
+<p>过去一周心情真的很不好，各种事情，每天都很忙，我也非常认真的做事，但就是有点力不从心的感觉，还好，我挺了过来。</p>
+<p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1573743139245&di=762c4bb07dae5330678cb2b4aa64485d&imgtype=0&src=http%3A%2F%2Foss.gkstk.com%2Fimages%2F2016%2F10%2F02075122485.jpg" alt="《新的开始》"></p>
+<p>总结上一周的工作，比赛打得一般，水平感觉并没有什么进步，情绪很是低落，感觉自己逐渐变得僵硬，成为了么得感情的家伙。甚至颓废到开始以沙雕视频度日。好在能够及时调整自己的状态，让自己变得忙碌起来，先后为社团搭建了内部交流社区，搭建了自己的博客，我好起来了，我活过来了。</p>
+<h2 id="搭建博客的目的"><a href="#搭建博客的目的" class="headerlink" title="搭建博客的目的"></a>搭建博客的目的</h2><ul>
+<li><p>其实很早之前我就想搭建自己的博客了，记录自己的生活状态，感想和遇到困难的时候的解决方法。</p>
+</li>
+<li><p>未来我将会分享自己对于在程序设计，考研，日常生活的分享；我还要拍自己的vlog记录自己的生活。</p>
+</li>
+<li><p>转眼间大学已经过去大半，想想自己的大学生活，真的不够精彩，没什么太大的收获，倒是认识了一群志同道合的好兄弟和小伙伴，这可能是我大学最大的财富吧！</p>
 </li>
 </ul>
-<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><pre><code class="bash">$ systemctl daemon-reload
-$ sudo service docker restart
-$ sudo service docker status (should see active (running))
-$ sudo docker run hello-world </code></pre>
+<h2 id="未来的计划"><a href="#未来的计划" class="headerlink" title="未来的计划"></a>未来的计划</h2><ul>
+<li>更新博客，做点有意义的事情，将自己学到的东西分享出来</li>
+<li>希望能够遇到心爱的她。</li>
+<li>继续追梦！！！</li>
+</ul>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 787772394@qq.com </span>
@@ -434,12 +440,12 @@ $ sudo docker run hello-world </code></pre>
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>docker使用过程中遇到的Cannot connect to the Docker daemon问题</p>
+    <p><span class="copy-title">文章标题:</span>新的开始</p>
     
     <p><span class="copy-title">本文作者:</span><a  title="二豆子·pwnd0u">二豆子·pwnd0u</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-11-24, 00:36:34</p>
-    <p><span class="copy-title">最后更新:</span>2019-11-24, 00:37:58</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/24/docker%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84Cannot-connect-to-the-Docker-daemon%E9%97%AE%E9%A2%98/" title="docker使用过程中遇到的Cannot connect to the Docker daemon问题">http://yoursite.com/2019/11/24/docker%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84Cannot-connect-to-the-Docker-daemon%E9%97%AE%E9%A2%98/</a>
+    <p><span class="copy-title">发布时间:</span>2019-11-14, 00:57:30</p>
+    <p><span class="copy-title">最后更新:</span>2019-11-24, 01:00:27</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/14/%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B/" title="新的开始">http://yoursite.com/2019/11/14/%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
