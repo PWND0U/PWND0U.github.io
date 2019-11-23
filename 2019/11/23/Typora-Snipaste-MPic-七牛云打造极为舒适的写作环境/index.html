@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="baidu-site-verification" content="JxPrfg3hNV" />
-  <title>【博客搭建第一季】使用hexo快速创建个人博客 | codefat·代码小胖的博客</title>
-  <meta name="keywords" content=" 博客搭建 , 新手指引 ">
-  <meta name="description" content="【博客搭建第一季】使用hexo快速创建个人博客 | codefat·代码小胖的博客">
+  <title>Typora+Snipaste+MPic+七牛云打造极为舒适的写作环境 | codefat·代码小胖的博客</title>
+  <meta name="keywords" content=" MarkDown , Typora , MPic ">
+  <meta name="description" content="Typora+Snipaste+MPic+七牛云打造极为舒适的写作环境 | codefat·代码小胖的博客">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="问题阐述 很长一段时间，在写博客的时候最烦心的就是图片的问题 每次图片都得先保存，然后再写到自己的文档中 发布文章时再次将图片上传到自己的服务器上，再更换文档中的图片地址 极大影响写作心情  Typora Typora 作为一款 Markdown 文本编辑器，在快速文字排版以及代码编辑方面的效率是显而易见的。使用人群方面，Typora 适合那些对码字手速和排版顺畅度有要求的人群，譬如码农、网站小编">
 <meta name="keywords" content="MarkDown,Typora,MPic">
@@ -274,9 +274,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="w-【博客搭建第一季】使用hexo快速创建个人博客" class="article article-type-w" itemscope itemprop="blogPost">
+        <article id="post-Typora-Snipaste-MPic-七牛云打造极为舒适的写作环境" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">【博客搭建第一季】使用hexo快速创建个人博客</h1>
+        <h1 class="article-title">Typora+Snipaste+MPic+七牛云打造极为舒适的写作环境</h1>
     
     <div class="article-meta">
         
@@ -291,16 +291,18 @@
         
         <span class="tag">
             
-            <a class="color5">博客搭建</a>
+            <a class="color4">MarkDown</a>
             
-            <a class="color5">新手指引</a>
+            <a class="color2">Typora</a>
+            
+            <a class="color5">MPic</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-11-22 16:21:58'>2019-11-22 15:59</time>
+        创建时间:<time class="date" title='更新时间: 2019-11-23 09:43:30'>2019-11-23 09:40</time>
         
     </div>
     <div class="article-meta">
@@ -322,7 +324,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#下载nodejs"><span class="toc-text">下载nodejs</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#开始安装hexo"><span class="toc-text">开始安装hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#开始初始的blog之路"><span class="toc-text">开始初始的blog之路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#部署到GitHub上"><span class="toc-text">部署到GitHub上</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#创建自己的仓库"><span class="toc-text">创建自己的仓库</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hexo快速使用命令"><span class="toc-text">hexo快速使用命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#问题阐述"><span class="toc-text">问题阐述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Typora"><span class="toc-text">Typora</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Snipaste"><span class="toc-text">Snipaste</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MPic"><span class="toc-text">MPic</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#七牛云"><span class="toc-text">七牛云</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -338,51 +340,60 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="下载nodejs"><a href="#下载nodejs" class="headerlink" title="下载nodejs"></a>下载nodejs</h3><pre><code>https://nodejs.org/en/</code></pre><ul>
-<li><p>下载安装后检查自己的版本号</p>
-<p><code>node -v</code></p>
-</li>
-<li><p>查看npm版本号</p>
-<p><code>npm -v</code></p>
-</li>
-<li><p>以上两步全部完成后切换至阿里源</p>
-<pre><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></pre></li>
+        <h3 id="问题阐述"><a href="#问题阐述" class="headerlink" title="问题阐述"></a>问题阐述</h3><ul>
+<li>很长一段时间，在写博客的时候最烦心的就是图片的问题</li>
+<li>每次图片都得先保存，然后再写到自己的文档中</li>
+<li>发布文章时再次将图片上传到自己的服务器上，再更换文档中的图片地址</li>
+<li>极大影响写作心情</li>
 </ul>
-<h3 id="开始安装hexo"><a href="#开始安装hexo" class="headerlink" title="开始安装hexo"></a>开始安装hexo</h3><pre><code>cnpm install -g hexo-cli</code></pre><h3 id="开始初始的blog之路"><a href="#开始初始的blog之路" class="headerlink" title="开始初始的blog之路"></a>开始初始的blog之路</h3><ol>
-<li>新建自己的blog文件夹、</li>
-</ol>
-<ul>
-<li>我的在/usr/local/blog</li>
+<h3 id="Typora"><a href="#Typora" class="headerlink" title="Typora"></a>Typora</h3><ul>
+<li>Typora 作为一款 Markdown 文本编辑器，在快速文字排版以及代码编辑方面的效率是显而易见的。使用人群方面，Typora 适合那些对码字手速和排版顺畅度有要求的人群，譬如码农、网站小编、出版业人等等</li>
+<li>使用简单，不需要花太多得到精力去排版</li>
+<li>markdown语法极简</li>
+<li>Typora在功能上比较完善</li>
+<li><a href="https://www.typora.io/" target="_blank" rel="noopener">下载地址</a></li>
 </ul>
-<ol>
-<li><p>进入自己的blog文件夹</p>
-<pre><code>//下载初始的blog模板
-sudo hexo init</code></pre></li>
-<li><p>下载完成,启动hexo并验证</p>
-<pre><code>hexo s</code></pre></li>
-<li><p>新建一个文档</p>
-<pre><code>hexo new &quot;My New Post&quot;</code></pre></li>
-<li><p>清理目前的文件</p>
-<pre><code>hexo clean</code></pre></li>
-<li><p>重新生成静态资源</p>
-<pre><code>hexo generate</code></pre></li>
-<li><p>重启服务查看各个写的文档</p>
-<pre><code>hexo s</code></pre></li>
-</ol>
-<h3 id="部署到GitHub上"><a href="#部署到GitHub上" class="headerlink" title="部署到GitHub上"></a>部署到GitHub上</h3><h4 id="创建自己的仓库"><a href="#创建自己的仓库" class="headerlink" title="创建自己的仓库"></a>创建自己的仓库</h4><ol>
-<li>安装hexo-deployer-git插件</li>
-</ol>
-<pre><code>cnpm install --save hexo-deployer-git</code></pre><ol>
-<li><p>修改blog文件夹下的_config.yml文件的最后几行</p>
-<pre><code>deploy:
- type: git
- repo: https://github.com/&lt;username&gt;/&lt;project&gt;
- # example, https://github.com/hexojs/hexojs.github.io
- branch: gh-pages</code></pre></li>
-<li><p>推送到自己的仓库</p>
-<pre><code>hexo d</code></pre></li>
-</ol>
-<h3 id="hexo快速使用命令"><a href="#hexo快速使用命令" class="headerlink" title="hexo快速使用命令"></a>hexo快速使用命令</h3><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code>$ hexo new &quot;My New Post&quot;</code></pre><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code>$ hexo server</code></pre><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code>$ hexo generate</code></pre><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code>$ hexo deploy</code></pre>
+<h3 id="Snipaste"><a href="#Snipaste" class="headerlink" title="Snipaste"></a>Snipaste</h3><ul>
+<li>快速截图、复制、粘贴。</li>
+<li>比QQ截图相对来说还要方便</li>
+<li>Snipaste 是一个简单但强大的截图工具，也可以让你将截图贴回到屏幕上！下载并打开 Snipaste，按下 <code>F1</code> 来开始截图，再按 <code>F3</code>，截图就在桌面置顶显示了。就这么简单！</li>
+<li>你还可以将剪贴板里的文字或者颜色信息转化为图片窗口，并且将它们进行缩放、旋转、翻转、设为半透明，甚至让鼠标能穿透它们！如果你是程序员、设计师，或者是大部分工作时间都在电脑前，贴图功能将改变你的工作方式、提升工作效率。</li>
+<li><a href="https://zh.snipaste.com/" target="_blank" rel="noopener">下载地址</a></li>
+</ul>
+<h3 id="MPic"><a href="#MPic" class="headerlink" title="MPic"></a>MPic</h3><ul>
+<li><p>MPic是我使用到现在觉得最好用的一款工具，使用图床的目的是为了方便Markdown写作，所以肯定要最终生成的连接是Markdown的图片链接格式。 </p>
+</li>
+<li><p>支持七牛云，国内的服务提供商，免费空间够用</p>
+</li>
+<li><p>支持上传方式： 拖拽上传 、 截图上传 、 复制上传 、选择上传</p>
+<p><img src="http://photo.codefat.cn/blog/20191123/05MnpKanKPam.png?imageslim" alt="mark"></p>
+</li>
+</ul>
+<h3 id="七牛云"><a href="#七牛云" class="headerlink" title="七牛云"></a>七牛云</h3><ul>
+<li><p>七牛云是国内领先的企业级公有云服务商，致力于打造以数据为核心的场景化PaaS服务。 </p>
+</li>
+<li><p>傻瓜式操作</p>
+</li>
+<li><p>会免费分配一个域名，但是有时长限制，因此推荐大家绑定自己的域名</p>
+</li>
+<li><p>双击打开MPic，点击左上角的设置账号，会进入如下界面，填写你的七牛云相关的Access key和Secret key即可。（如果你还没有七牛云账号，可以自行注册） </p>
+</li>
+<li><p>就可以开始你的写作之旅了</p>
+</li>
+<li><p>域名绑定</p>
+<p><img src="http://photo.codefat.cn/blog/20191123/uNB2VsTe7bqB.png?imageslim" alt="mark"></p>
+</li>
+<li><p>查看AK和SK</p>
+<p><img src="http://photo.codefat.cn/blog/20191123/By5m5w9OhGYv.png?imageslim" alt="mark"></p>
+</li>
+<li><p>设置账号</p>
+<p><img src="http://photo.codefat.cn/blog/20191123/qIqWpO6BXyIy.png?imageslim" alt="mark"></p>
+</li>
+<li><p><a href="https://www.qiniu.com/" target="_blank" rel="noopener">注册地址</a></p>
+</li>
+</ul>
+<p><strong>设置完成之后就可以快乐的写作了，方便至极</strong></p>
+
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 787772394@qq.com </span>
     </div>
@@ -395,12 +406,12 @@ sudo hexo init</code></pre></li>
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>【博客搭建第一季】使用hexo快速创建个人博客</p>
+    <p><span class="copy-title">文章标题:</span>Typora+Snipaste+MPic+七牛云打造极为舒适的写作环境</p>
     
     <p><span class="copy-title">本文作者:</span><a  title="二豆子·pwnd0u">二豆子·pwnd0u</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-11-22, 15:59:44</p>
-    <p><span class="copy-title">最后更新:</span>2019-11-22, 16:21:58</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/22/%E3%80%90%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%AC%E4%B8%80%E5%AD%A3%E3%80%91%E4%BD%BF%E7%94%A8hexo%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="【博客搭建第一季】使用hexo快速创建个人博客">http://yoursite.com/2019/11/22/%E3%80%90%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%AC%E4%B8%80%E5%AD%A3%E3%80%91%E4%BD%BF%E7%94%A8hexo%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</a>
+    <p><span class="copy-title">发布时间:</span>2019-11-23, 09:40:34</p>
+    <p><span class="copy-title">最后更新:</span>2019-11-23, 09:43:30</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/23/Typora-Snipaste-MPic-%E4%B8%83%E7%89%9B%E4%BA%91%E6%89%93%E9%80%A0%E6%9E%81%E4%B8%BA%E8%88%92%E9%80%82%E7%9A%84%E5%86%99%E4%BD%9C%E7%8E%AF%E5%A2%83/" title="Typora+Snipaste+MPic+七牛云打造极为舒适的写作环境">http://yoursite.com/2019/11/23/Typora-Snipaste-MPic-%E4%B8%83%E7%89%9B%E4%BA%91%E6%89%93%E9%80%A0%E6%9E%81%E4%B8%BA%E8%88%92%E9%80%82%E7%9A%84%E5%86%99%E4%BD%9C%E7%8E%AF%E5%A2%83/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
